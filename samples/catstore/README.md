@@ -1,6 +1,6 @@
 # CatStore
 
-Sample Store Example: vanillaJS VS VueJS.
+a Store Sample: VanillaJS VS VueJS.
 
 ## Learn About
 
