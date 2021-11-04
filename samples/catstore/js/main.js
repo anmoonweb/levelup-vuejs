@@ -5,79 +5,55 @@ let products = [
         img: 'https://cataas.com/cat/fluffy',
         regular_price: 20,
         sale_price: 10,
-        options: [
-            'red', 'blue'
-        ]
     },
     {
         id: 2,
         title: 'nice cat',
         img: 'https://cataas.com/cat/nice',
-        regular_price: 20,
-        sale_price: 10,
-        options: [
-            'red', 'blue'
-        ]
+        regular_price: 30,
+        sale_price: 20,
     },
     {
         id: 3,
         title: 'cute cat',
         img: 'https://cataas.com/cat/cute',
-        regular_price: 20,
-        sale_price: 10,
-        options: [
-            'red', 'blue'
-        ]
+        regular_price: 40,
+        sale_price: 30,
     },
     {
         id: 4,
         title: 'good cat',
         img: 'https://cataas.com/cat/eyes',
-        regular_price: 20,
-        sale_price: 10,
-        options: [
-            'red', 'blue'
-        ]
+        regular_price: 50,
+        sale_price: 40,
     },
     {
         id: 5,
         title: 'fat cat',
         img: 'https://cataas.com/cat/fat',
-        regular_price: 20,
-        sale_price: 10,
-        options: [
-            'red', 'blue'
-        ]
+        regular_price: 60,
+        sale_price: 50,
     },
     {
         id: 6,
         title: 'white cat',
         img: 'https://cataas.com/cat/white',
-        regular_price: 20,
-        sale_price: 10,
-        options: [
-            'red', 'blue'
-        ]
+        regular_price: 70,
+        sale_price: 60,
     },
     {
         id: 7,
         title: 'black cat',
         img: 'https://cataas.com/cat/black',
-        regular_price: 20,
-        sale_price: 10,
-        options: [
-            'red', 'blue'
-        ]
+        regular_price: 80,
+        sale_price: 70,
     },
     {
         id: 8,
         title: 'blue cat',
         img: 'https://cataas.com/cat/blue',
-        regular_price: 20,
-        sale_price: 10,
-        options: [
-            'red', 'blue'
-        ]
+        regular_price: 90,
+        sale_price: 80,
     }
 ];
 
