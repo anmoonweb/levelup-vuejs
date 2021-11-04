@@ -126,5 +126,5 @@ function addProduct(e, prodId) {
 
     total += products[prodId - 1].sale_price;
     totalContainer.innerText = total;
-    countContainer.innerText = count++;
+    countContainer.innerText = ++count;
 }
