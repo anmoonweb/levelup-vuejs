@@ -75,7 +75,7 @@ products.forEach(product => {
                     <img class="h-60 w-full" src="${product.img}">
                     <div class="p-2 bg-gray-100">
                     <div class="flex justify-between">
-                    <h2 class="text-xl font-semibold text-gray-800">${product.title}</h2>
+                    <h2 class="text-xl font-semibold text-gray-800 capitalize">${product.title}</h2>
                     <span><b class="text-lg">${product.sale_price}$<span class="currency"></span></b><del class="text-sm text-gray-600 ml-2">${product.regular_price}$</del></span>
                     </div>
                     <button onclick="addProduct(this,${product.id})" class="w-full mt-2 text-center bg-blue-500 rounded-full font-bold text-white px-4 py-3 transition duration-100 ease-in-out">Add To cart</button>
