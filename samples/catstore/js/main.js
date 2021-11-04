@@ -78,7 +78,7 @@ products.forEach(product => {
                     <h2 class="text-xl font-semibold text-gray-800">${product.title}</h2>
                     <span><b class="text-lg">${product.sale_price}$<span class="currency"></span></b><del class="text-sm text-gray-600 ml-2">${product.regular_price}$</del></span>
                     </div>
-                    <button onclick="addProduct(this,${product.id})" class="w-full mt-2 text-center bg-blue-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">Add To cart</button>
+                    <button onclick="addProduct(this,${product.id})" class="w-full mt-2 text-center bg-blue-500 rounded-full font-bold text-white px-4 py-3 transition duration-100 ease-in-out">Add To cart</button>
                     </div>      
                 </div>        
               `;
