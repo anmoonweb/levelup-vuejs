@@ -9,33 +9,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- <style type="text/tailwindcss">
+      
+
+    </style> -->
     <title>Vue 3 Formation</title>
 </head>
 
 
 <body>
 
-    <div id="app" class="h-secreen flex flex-wrap items-start justify-between py-10">
+    <div id="app">
         <!-- User Card -->
         <user-card></user-card>
         <!-- Posts list -->
         <posts-list v-if="posts.length" :posts="posts" @on-edit="editPost($event)" @on-delete="removePost($event)">
         </posts-list>
-        <div v-else class="w-2/3 text-center text-gray-400 text-2xl py-12">You don't have any Posts</div>
+        <div v-else class="no-post">You don't have any Posts</div>
 
-
-        <form @submit.prevent="addPost"
-            class="lg:w-7/12 rounded-lg bg-gray-100 text-gray-800 p-4 mt-4 mx-3 lg:mx-auto items-center justify-center">
-            <input placeholder="message" type="text"
-                class="w-full border border-gray-500 outline-none rounded px-3 py-2" v-model="post.title" />
-            <textarea name="body" v-model="post.body" rows="3"
-                class="w-full border border-gray-500 outline-none px-3 py-1 mt-2 rounded"></textarea>
-            <input type="text" v-model="post.img" placeholder="https://source.unsplash.com/600x300/?space,stars"
-                class="w-full text-sm border border-gray-500 outline-none mt-2 rounded px-3 py-2">
-            <p class="text-xs text-gray-500 ml-1">add a keyword of the image you want.</p>
-            <button type="submit" class="bg-indigo-500 text-gray-200 rounded tent-white px-6 py-1 mt-3">
-                Submit
-            </button>
+        <form @submit.prevent="addPost">
+            <input placeholder="message" type="text" v-model="post.title" />
+            <textarea name="body" v-model="post.body" rows="3"></textarea>
+            <input type="text" v-model="post.img" placeholder="https://source.unsplash.com/600x300/?space,stars" />
+            <p class="form-info">add a keyword of the image you want.</p>
+            <button type="submit" class="submit">Submit</button>
         </form>
     </div>
 
